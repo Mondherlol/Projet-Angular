@@ -7,11 +7,13 @@ import { LoginComponent } from './composants/authentification/login/login.compon
 import { SignupComponent } from './composants/authentification/signup/signup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { AccueilComponent } from './composants/accueil/accueil.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    AccueilComponent
   ],
   imports: [
     BrowserModule,

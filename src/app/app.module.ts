@@ -8,12 +8,14 @@ import { SignupComponent } from './composants/authentification/signup/signup.com
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AccueilComponent } from './composants/accueil/accueil.component';
+import { FooterComponent } from './composants/accueil/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
-    AccueilComponent
+    AccueilComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

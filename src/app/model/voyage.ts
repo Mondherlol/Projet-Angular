@@ -5,7 +5,6 @@ export class Voyage {
      public prix?:number,
      public Description?:string,
      public  Image?:string,
-     public  Alt?:string,
      public Duree?:string,
      public  DateDebut?:Date,
      public DateFin?:Date,

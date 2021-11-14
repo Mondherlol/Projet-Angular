@@ -9,13 +9,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AccueilComponent } from './composants/accueil/accueil.component';
 import { FooterComponent } from './composants/accueil/footer/footer.component';
+import { TopComponent } from './composants/accueil/top/top.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
     AccueilComponent,
-    FooterComponent
+    FooterComponent,
+    TopComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,20 @@
 <div id="haut"></div>
-<ul>
-    <li *ngFor="let v of Voyages">
 
+<div class="container">
+    <div class="row no-gutters">
+ <div *ngFor="let v of Voyages" class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img [src]="v.Image" class="card-img-top" [alt]="v.libelle">
+            <div class="card-body">
+              <h5 class="card-title">{{v.identifiant}}  {{v.libelle}}</h5>
+              <p class="card-text">{{v.Description}}</p>
+              <a href="#" class="btn btn-primary">Réserver</a>
+            </div>
+          </div>
+ </div>
+ </div>
+ </div>
+<!-- 
         {{v.identifiant}}<br> {{v.libelle}}
         <br> {{v.prix}}
         <br> {{v.Description}}
@@ -11,9 +24,10 @@
         <br> {{v.DateFin}}
         <br> {{v.Promo}}
         <br> {{v.PourcentagePromo}}
-        <br>
+        <br> -->
 
-    </li>
-</ul>
+ 
+
+
 <app-footer>
 </app-footer>

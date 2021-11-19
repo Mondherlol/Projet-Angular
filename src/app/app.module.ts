@@ -10,6 +10,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AccueilComponent } from './composants/accueil/accueil.component';
 import { FooterComponent } from './composants/accueil/footer/footer.component';
 import { TopComponent } from './composants/accueil/top/top.component';
+import { CarouselComponent } from './composants//accueil/carousel/carousel.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,13 +19,16 @@ import { TopComponent } from './composants/accueil/top/top.component';
     SignupComponent,
     AccueilComponent,
     FooterComponent,
-    TopComponent
+    TopComponent,
+    CarouselComponent,
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MDBBootstrapModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

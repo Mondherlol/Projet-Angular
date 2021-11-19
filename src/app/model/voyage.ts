@@ -9,7 +9,8 @@ export class Voyage {
      public DateDebut?:Date,
      public DateFin?:Date,
      public Promo?:boolean,
-     public PourcentagePromo?:number
+     public PourcentagePromo?:number,
+     public categorie?:string
     ){
 
     }

@@ -47,7 +47,7 @@
 </div>
 
 
-<div class="container">
+<!-- <div class="container">
     <div class="row no-gutters">
  <div *ngFor="let v of Voyages" class="col-4">
         <div class="card" style="width: 85%">
@@ -60,12 +60,9 @@
           </div>
  </div>
  </div>
- </div>
+ </div> -->
 
-        <div class="img-hover-zoom c" >
-          <img src="assets/Kansai.jpg" alt="Another Image zoom-on-hover effect" width="350px">
-        </div> 
-
+      
             
 <section class="featured spad">
   <div class="container">
@@ -90,7 +87,7 @@
       <!-- Début -->
       
       <div *ngFor="let v of Voyages" class="col-lg-3 col-md-4 col-sm-6 mix {{v.categorie}} ">
-        <div class="featured__item  " >
+        <!-- <div class="featured__item  " >
           <div class="featured__item__pic set-bg">
             <img [src]="v.Image" class="card-img-top" [alt]="v.libelle"> 
             <ul class="featured__item__pic__hover">
@@ -103,29 +100,21 @@
             <h6><a href="#">{{v.libelle}}</a></h6>
             <h5>${{v.prix}}</h5>
           </div>
-        </div>
+        </div> -->
+        <div class="card" style="width: 85%">
+          <div class="img-hover-zoom c" >  <img [src]="v.Image" class="card-img-top" [alt]="v.libelle"> </div>
+            <div class="card-body">
+              <h5 class="card-title">{{v.identifiant}}  {{v.libelle}}</h5>
+              <p class="card-text">{{v.Description}}</p>
+              <a href="#" class="btn btn-primary">Réserver</a>
+            </div>
+          </div>
       </div>
       <!-- Fin -->
       
     </div>
   </div>
 </section>
-<div class="banner">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-6">
-        <div class="banner__pic">
-          <img src="assets/img/banner/banner-1.jpg" alt="" />
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-6">
-        <div class="banner__pic">
-          <img src="assets/img/banner/banner-2.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
- 
+
 <app-footer>
 </app-footer>

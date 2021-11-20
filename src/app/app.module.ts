@@ -13,6 +13,10 @@ import { TopComponent } from './composants/accueil/top/top.component';
 import { CarouselComponent } from './composants//accueil/carousel/carousel.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ErrorComponent } from './composants/error/error.component';
+import { ReservationComponent } from './composants/reservation/reservation.component';
+import { ListeRegionsComponent } from './composants/accueil/liste-regions/liste-regions.component';
+import { FeaturesComponent } from './composants/accueil/features/features.component';
+import { RechercherComponent } from './composants/rechercher/rechercher.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +27,10 @@ import { ErrorComponent } from './composants/error/error.component';
     FooterComponent,
     TopComponent,
     CarouselComponent,
+    ReservationComponent,
+    ListeRegionsComponent,
+    FeaturesComponent,
+    RechercherComponent,
    
   ],
   imports: [

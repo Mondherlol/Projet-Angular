@@ -1,6 +1,6 @@
 export class Voyage {
     constructor(
-     public identifiant?:number,
+     public id?:number,
      public libelle?:string,
      public prix?:number,
      public Description?:string,

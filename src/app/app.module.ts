@@ -23,7 +23,6 @@ import { ErrorComponent } from './composants/error/error.component';
     FooterComponent,
     TopComponent,
     CarouselComponent,
-    ErrorComponent,
    
   ],
   imports: [

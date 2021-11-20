@@ -31,7 +31,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     BrowserAnimationsModule,
     MatSnackBarModule,
     MDBBootstrapModule.forRoot(),
-
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]

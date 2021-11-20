@@ -12,6 +12,7 @@ import { FooterComponent } from './composants/accueil/footer/footer.component';
 import { TopComponent } from './composants/accueil/top/top.component';
 import { CarouselComponent } from './composants//accueil/carousel/carousel.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     FooterComponent,
     TopComponent,
     CarouselComponent,
+
    
   ],
   imports: [
@@ -29,6 +31,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     BrowserAnimationsModule,
     MatSnackBarModule,
     MDBBootstrapModule.forRoot(),
+
   ],
   providers: [],
   bootstrap: [AppComponent]

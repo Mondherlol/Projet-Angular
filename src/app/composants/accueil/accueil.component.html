@@ -47,8 +47,9 @@
 </div> -->
 
 
-<div class="container">
+<!-- <div class="container">
     <div class="row no-gutters">
+<<<<<<< HEAD
         <div *ngFor="let v of Voyages" class="col-4">
             <div class="card" style="width: 18rem;">
                 <div class="img-hover-zoom c" style="background-color:red;"> <img [src]="v.Image" class="card-img-top" [alt]="v.libelle"> </div>
@@ -66,6 +67,74 @@
     <img src="assets/Kansai.jpg" alt="Another Image zoom-on-hover effect" width="350px">
 </div>
 
+=======
+ <div *ngFor="let v of Voyages" class="col-4">
+        <div class="card" style="width: 85%">
+          <div class="img-hover-zoom c" >  <img [src]="v.Image" class="card-img-top" [alt]="v.libelle"> </div>
+            <div class="card-body">
+              <h5 class="card-title">{{v.identifiant}}  {{v.libelle}}</h5>
+              <p class="card-text">{{v.Description}}</p>
+              <a href="#" class="btn btn-primary">Réserver</a>
+            </div>
+          </div>
+ </div>
+ </div>
+ </div> -->
+
+      
+            
+<section class="featured spad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title">
+          <h2>Les Régions du Japon</h2>
+        </div>
+        <div class="featured__controls">
+          <ul>
+            <li class="active" data-filter="*">Tout</li>
+            <li data-filter=".Traditionnelle">Traditionnelle</li>
+            <li data-filter=".Paradisiaque">Paradisiaque</li>
+            <li data-filter=".Touristique">Touristique</li>
+            <li data-filter=".Historique">Historique</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row featured__filter">
+     
+      <!-- Début -->
+      
+      <div *ngFor="let v of Voyages" class="col-lg-3 col-md-4 col-sm-6 mix {{v.categorie}} ">
+        <!-- <div class="featured__item  " >
+          <div class="featured__item__pic set-bg">
+            <img [src]="v.Image" class="card-img-top" [alt]="v.libelle"> 
+            <ul class="featured__item__pic__hover">
+              <li><a href="#"><i class="fa fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+              <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+          </div>
+          <div class="featured__item__text">
+            <h6><a href="#">{{v.libelle}}</a></h6>
+            <h5>${{v.prix}}</h5>
+          </div>
+        </div> -->
+        <div class="card" style="width: 85%">
+          <div class="img-hover-zoom c" >  <img [src]="v.Image" class="card-img-top" [alt]="v.libelle"> </div>
+            <div class="card-body">
+              <h5 class="card-title">{{v.identifiant}}  {{v.libelle}}</h5>
+              <p class="card-text">{{v.Description}}</p>
+              <a href="#" class="btn btn-primary">Réserver</a>
+            </div>
+          </div>
+      </div>
+      <!-- Fin -->
+      
+    </div>
+  </div>
+</section>
+>>>>>>> e7ef23bb28f682e4172e1f87efc69624a56d47d9
 
 <app-footer>
 </app-footer>

@@ -4,13 +4,18 @@ import {LoginComponent} from "./composants/authentification/login/login.componen
 import {SignupComponent } from './composants/authentification/signup/signup.component';
 import { AccueilComponent } from './composants/accueil/accueil.component';
 import { ErrorComponent } from './composants/error/error.component';
+import { ReservationComponent } from './composants/reservation/reservation.component';
+import { RechercherComponent } from './composants/rechercher/rechercher.component';
 
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'accueil', component: AccueilComponent },
-  // { path: '', component: AccueilComponent },
+  { path: 'accueil', component: AccueilComponent },  
+  { path : 'reservation', component : ReservationComponent },
+  { path : 'rechercher', component : RechercherComponent},
+  { path : 'rechercher/:motcle',component:RechercherComponent},
+  {path:'reservation/:id',component:ReservationComponent},
   {path:'', redirectTo:'accueil', pathMatch:'full'},
   {path:'**', component:ErrorComponent},
   

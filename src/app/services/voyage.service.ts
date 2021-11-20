@@ -35,6 +35,14 @@ export class VoyageService {
     getVoyage(){
       return this.Voyage;
     }
+    getVoyageById(id :number) {
+      return this.Voyage.find(i=>i.id==id);
+  }
+    getVoyageByLibelle(motcle:string){
+      return (this.Voyage.filter(i=>(i.libelle==motcle)||(i.categorie==motcle)));
+    }
+   
+  
   constructor() { }
  
 }

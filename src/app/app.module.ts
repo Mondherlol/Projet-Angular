@@ -12,6 +12,7 @@ import { FooterComponent } from './composants/accueil/footer/footer.component';
 import { TopComponent } from './composants/accueil/top/top.component';
 import { CarouselComponent } from './composants//accueil/carousel/carousel.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { ErrorComponent } from './composants/error/error.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     FooterComponent,
     TopComponent,
     CarouselComponent,
+    ErrorComponent,
    
   ],
   imports: [

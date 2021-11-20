@@ -2,10 +2,10 @@
 
 <app-carousel></app-carousel>
 
-<!-- Carousel
-<div id="demo" class="carousel slide " data-bs-ride="carousel"> -->
+<!-- Carousel -->
+<div id="demo" class="carousel slide " data-bs-ride="carousel">
 
-<!-- Indicators/dots
+    <!-- Indicators/dots -->
     <div class="carousel-indicators c ">
         <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
@@ -13,10 +13,9 @@
         <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
         <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
         <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
-    </div> -->
-
-<!-- The slideshow/carousel -->
-<!-- <div class="carousel-inner">
+    </div>
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="assets/caroussel/c (1).jpg" alt="Los Angeles" class="d-block" style="width:100%; height:75%;">
         </div>
@@ -35,33 +34,32 @@
         <div class="carousel-item">
             <img src="assets/caroussel/c (6).jpg" alt="New York" class="d-block" style="width:100%">
         </div>
-    </div> -->
+    </div>
 
-<!-- Left and right controls/icons
-<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </button>
-<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
   </button>
-</div> -->
+</div>
 
 
-<!-- <div class="container">
+<div class="container">
     <div class="row no-gutters">
- <div *ngFor="let v of Voyages" class="col-4">
-        <div class="card" style="width: 85%">
-          <div class="img-hover-zoom c" >  <img [src]="v.Image" class="card-img-top" [alt]="v.libelle"> </div>
-            <div class="card-body">
-              <h5 class="card-title">{{v.identifiant}}  {{v.libelle}}</h5>
-              <p class="card-text">{{v.Description}}</p>
-              <a href="#" class="btn btn-primary">Réserver</a>
+        <div *ngFor="let v of Voyages" class="col-4">
+            <div class="card" style="width: 85%">
+                <div class="img-hover-zoom c"> <img [src]="v.Image" class="card-img-top" [alt]="v.libelle"> </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{v.identifiant}} {{v.libelle}}</h5>
+                    <p class="card-text">{{v.Description}}</p>
+                    <a href="#" class="btn btn-primary">Réserver</a>
+                </div>
             </div>
-          </div>
- </div>
- </div>
- </div> -->
-
+        </div>
+    </div>
+</div>
 
 
 <section class="featured spad">
@@ -87,20 +85,7 @@
             <!-- Début -->
 
             <div *ngFor="let v of Voyages" class="col-lg-3 col-md-4 col-sm-6 mix {{v.categorie}} ">
-                <!-- <div class="featured__item  " >
-          <div class="featured__item__pic set-bg">
-            <img [src]="v.Image" class="card-img-top" [alt]="v.libelle"> 
-            <ul class="featured__item__pic__hover">
-              <li><a href="#"><i class="fa fa-heart"></i></a></li>
-              <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-              <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-            </ul>
-          </div>
-          <div class="featured__item__text">
-            <h6><a href="#">{{v.libelle}}</a></h6>
-            <h5>${{v.prix}}</h5>
-          </div>
-        </div> -->
+
                 <div class="card" style="width: 85%">
                     <div class="img-hover-zoom c"> <img [src]="v.Image" class="card-img-top" [alt]="v.libelle"> </div>
                     <div class="card-body">
